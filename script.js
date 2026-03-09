@@ -27,4 +27,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
+    const scrollLink = document.getElementById("scroll");
+    const heroSection = document.getElementById("hero");
+
+    if (!scrollLink || !heroSection) return;
+
+    window.addEventListener("scroll", function () {
+
+        console.log("scrolling...");
+        
+        const heroHeight = heroSection.offsetHeight;
+        const scrollPosition = window.scrollY;
+
+        if (scrollPosition > heroHeight / 2) {
+            scrollLink.classList.add("show");
+        } else {
+            scrollLink.classList.remove("show");
+        }
+
+    });
+
 });
