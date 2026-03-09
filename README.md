@@ -21,11 +21,11 @@ I enjoy building high-quality software, solving complex technical problems, and 
 
 ---
 
-## 🚀 Live Website
+## 🚀 Live  Portfolio Website
 
-You can view the portfolio here:
+You can view my portfolio here:
 
-https://vinil-coder.github.io/portfolio/
+🔗 **https://vinil-coder.github.io/portfolio/**
 
 ---
 
@@ -120,8 +120,11 @@ Features:
 Email: vinil3728@gmail.com  
 Mobile: +91-7032533649
 
-GitHub:  
+💻 GitHub:  
 https://github.com/Vinil-Coder
+
+🌐 Portfolio:  
+https://vinil-coder.github.io/portfolio/
 
 ---
 
