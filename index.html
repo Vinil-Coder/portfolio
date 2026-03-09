@@ -4,21 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinil Sai Manikanta | Portfolio</title>
-
+    <title>Vinil | Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar">
-            <h2 class="logo">Vinil</h2>
-
-            <ul class="nav-links">
+        <nav>
+            <h2 class="logo">Vinil Sai Manikanta</h2>
+            <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -28,39 +23,40 @@
         </nav>
     </header>
 
-
     <section class="hero">
         <div class="hero-content">
-
             <h1>Vinil Sai Manikanta</h1>
-
-            <h3>Senior Angular Developer</h3>
-
+            <h3>Full Stack Developer</h3>
             <p>
-                4+ years building scalable Angular applications, performance optimization,
-                and full-stack systems using Node.js, MySQL, and AWS.
+                Building scalable web applications using Angular, Node.js and modern web technologies.
             </p>
 
-            <a href="#projects" class="btn">View My Work</a>
-
+            <div class="buttons">
+                <a href="#projects" class="btn" id="view-projects">View Projects</a>
+                <a href="#" class="btn-outline">Download Resume</a>
+            </div>
         </div>
     </section>
 
-
     <section id="about" class="section">
-
         <h2>About Me</h2>
 
         <p>
-            Senior Angular Developer with strong expertise in Angular, TypeScript,
-            RxJS, and scalable frontend architecture. Experienced in building
-            production-grade applications, optimizing performance, and handling
-            critical production issues.
+            I am a passionate full-stack developer with experience building web applications
+            using Angular, Node.js, and modern JavaScript frameworks. I enjoy designing
+            clean architectures and building high performance applications.
+        </p>
+
+        <h3>Professional Summary</h3>
+
+        <p>
+            Experienced in building scalable front-end and back-end systems,
+            developing REST APIs, integrating databases, and deploying
+            applications. I enjoy solving complex problems and continuously
+            improving my development skills.
         </p>
 
     </section>
-
-
 
     <section id="skills" class="section">
 
@@ -68,62 +64,110 @@
 
         <div class="skills-grid">
 
-            <div class="skill-card">
+            <div>
                 <h3>Frontend</h3>
-                <p>Angular, TypeScript, JavaScript, RxJS, HTML5, SCSS, Angular Material</p>
+                <ul>
+                    <li>Angular</li>
+                    <li>TypeScript</li>
+                    <li>JavaScript</li>
+                    <li>HTML5</li>
+                    <li>SCSS</li>
+                    <li>Responsive Design</li>
+                </ul>
             </div>
 
-            <div class="skill-card">
+            <div>
                 <h3>Backend</h3>
-                <p>Node.js, Express.js, REST APIs</p>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>REST APIs</li>
+                </ul>
             </div>
 
-            <div class="skill-card">
+            <div>
                 <h3>Databases</h3>
-                <p>MySQL, MongoDB</p>
+                <ul>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                </ul>
             </div>
 
-            <div class="skill-card">
-                <h3>Cloud & DevOps</h3>
-                <p>AWS, Docker, Nginx, PM2, Kubernetes, Terraform</p>
+            <div>
+                <h3>Tools</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>Postman</li>
+                    <li>VS Code</li>
+                </ul>
             </div>
 
         </div>
-
     </section>
-
-
 
     <section id="experience" class="section">
 
-        <h2>Professional Experience</h2>
+        <h2>Work Experience</h2>
 
-        <div class="timeline">
+        <div class="experience-container">
 
-            <div class="timeline-item">
-                <h3>Senior Software Engineer</h3>
-                <p>Iprotechs Commercial Solutions</p>
-                <span>2025 - Present</span>
-                <p>Built and scaled Angular applications and improved performance by 30-40%.</p>
-            </div>
+            <div class="experience-card">
 
-            <div class="timeline-item">
-                <h3>Software Engineer</h3>
-                <span>2024 - 2025</span>
-                <p>Implemented Firebase push notifications and optimized REST API usage.</p>
-            </div>
+                <h3>Iprotechs Commercial Solutions Pvt Ltd.</h3>
+                <p class="duration">Feb 2022 - Present</p>
 
-            <div class="timeline-item">
-                <h3>Junior Software Engineer</h3>
-                <span>2023 - 2024</span>
-                <p>Developed reusable Angular components and responsive UI using Angular Material.</p>
+                <h4>Senior Software Engineer</h4>
+                <p class="duration">Jul 2025 - Present</p>
+
+                <ul>
+                    <li>Built and scaled Angular applications from scratch to production-ready state with optimized
+                        architecture.</li>
+                    <li>Improved application performance using lazy loading, optimized change detection and caching
+                        strategies.</li>
+                    <li>Reduced application load time by nearly 40% through performance optimization techniques.</li>
+                    <li>Handled critical production issues and performed root cause analysis across frontend, backend
+                        APIs and databases.</li>
+                    <li>Collaborated with product managers, backend engineers and QA teams for high quality releases.
+                    </li>
+                </ul>
+
+                <h4>Software Engineer</h4>
+                <p class="duration">May 2024 - Jun 2025</p>
+
+                <ul>
+                    <li>Implemented push notifications using Firebase and real-time communication with Socket.IO.</li>
+                    <li>Designed and optimized REST API integrations including query-based generic APIs.</li>
+                    <li>Introduced application-level caching to reuse API responses and reduce redundant API calls.</li>
+                    <li>Refactored legacy codebases (HTML, SCSS, TypeScript) to handle null and undefined edge cases.
+                    </li>
+                    <li>Led UI redesign and modernization of two enterprise applications improving usability.</li>
+                </ul>
+
+                <h4>Junior Software Engineer</h4>
+                <p class="duration">Feb 2023 - Apr 2024</p>
+
+                <ul>
+                    <li>Developed reusable Angular components, directives, pipes, services and shared modules.</li>
+                    <li>Converted UI designs into responsive pixel-perfect screens using Angular Material and SCSS.</li>
+                    <li>Fixed medium and high priority bugs improving application stability and reliability.</li>
+                    <li>Resolved dependency conflicts and build issues ensuring stable project builds.</li>
+                </ul>
+
+                <h4>Trainee Engineer</h4>
+                <p class="duration">Feb 2022 - Jan 2023</p>
+
+                <ul>
+                    <li>Worked on Angular, TypeScript and JavaScript through real-time project development.</li>
+                    <li>Assisted in UI development, API integration and debugging tasks.</li>
+                    <li>Documented route mappings, API request structures and role-based access modules.</li>
+                </ul>
+
             </div>
 
         </div>
 
     </section>
-
-
 
     <section id="projects" class="section">
 
@@ -132,50 +176,49 @@
         <div class="project-grid">
 
             <div class="project-card">
-                <h3>Full Stack Todo Application</h3>
+                <h3>Task Manager Application</h3>
                 <p>
-                    Angular + Node.js + MySQL application deployed on AWS
-                    using S3, EC2, and RDS.
+                    Full stack task management system built using Angular, Node.js and MongoDB.
                 </p>
-            </div>
-
-            <div class="project-card">
-                <h3>Enterprise Angular Platforms</h3>
-                <p>
-                    Built scalable Angular applications with optimized
-                    performance and modern UI architecture.
-                </p>
+                <ul>
+                    <li>CRUD task operations</li>
+                    <li>REST API architecture</li>
+                    <li>Responsive UI</li>
+                </ul>
+                <a href="#">View Code</a>
             </div>
 
         </div>
 
     </section>
 
+    <section class="section">
 
+        <h2>What I'm Learning</h2>
+
+        <ul class="learning">
+            <li>Advanced Angular Architecture</li>
+            <li>State Management (NgRx)</li>
+            <li>System Design Fundamentals</li>
+            <li>Cloud Deployment</li>
+        </ul>
+
+    </section>
 
     <section id="contact" class="section contact">
 
         <h2>Contact</h2>
 
-        <p>Email: viniladapa@gmail.com</p>
-        <p>Phone: +91 7032533649</p>
+        <p>Email: vinil3728@gmail.com</p>
+        <p>GitHub: github.com/Vinil-Coder</p>
 
-        <a href="https://github.com/vinil9698" target="_blank" class="btn">
-            GitHub
-        </a>
+        <a href="#" class="btn">Contact Me</a>
 
     </section>
 
-
-
     <footer>
-
         <p>© 2026 Vinil Sai Manikanta</p>
-
     </footer>
-
-
-    <script src="script.js"></script>
 
 </body>
 

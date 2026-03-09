@@ -1,13 +1,28 @@
-// smooth scroll
+document.addEventListener("DOMContentLoaded", function () {
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    const navItems = document.querySelectorAll('a[href^="#"]');
 
-    anchor.addEventListener('click', function (e) {
+    navItems.forEach(item => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        })
+    })
+
+    const btn = document.getElementById("view-projects");
+
+    btn.addEventListener("click", function (e) {
 
         e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+        document.getElementById("projects").scrollIntoView({
+            behavior: "smooth",
+            block: "start"
         });
 
     });
