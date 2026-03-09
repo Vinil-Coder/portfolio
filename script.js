@@ -1,5 +1,19 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+    const closeIcon = document.getElementById("close-icon");
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+        closeIcon.style.display = "block";
+    });
+
+    closeIcon.addEventListener("click", function () {
+        navLinks.classList.remove("show");
+        closeIcon.style.display = "none";
+    });
+
     const navItems = document.querySelectorAll('a[href^="#"]');
 
     navItems.forEach(item => {
@@ -7,6 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
             e.preventDefault();
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
+            navLinks.classList.remove("show");
+            closeIcon.style.display = "none";
             targetElement.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -34,8 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", function () {
 
-        console.log("scrolling...");
-        
         const heroHeight = heroSection.offsetHeight;
         const scrollPosition = window.scrollY;
 
